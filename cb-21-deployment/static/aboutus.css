@@ -1,0 +1,380 @@
+
+.content
+{
+    max-width:80%;
+    margin:auto;
+    display:flex;
+    margin-top:10px;
+}
+.box1
+{
+    
+    height:fit-content;
+    width:900px;
+    margin:auto;
+    height:50%;
+    padding:20px;
+} 
+
+.text
+  {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #121B46;
+  }
+
+  .image
+  {
+      object-fit: contain;
+      height:600px; 
+      width: 550px;
+      margin-right:20%;
+  }
+  
+  .image_div
+  {
+      height:100%;
+      width:57%;
+      margin:auto;
+      margin-right:5%;   
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    border: 2px solid #FFD700;
+    transform: translate(-5px, -5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+  
+  
+  #card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #00f, #0f0, #f00, #0f0, #00f);
+    background-size: 400%;
+    opacity: 0.8;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #card:hover::before {
+    opacity: 1;
+    background-position: 100%;
+  }
+  
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  } */
+  
+  .text {
+    width: 50%;
+  }
+  h1 {
+  text-align: center;
+  font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px; 
+    flex-wrap: wrap;
+   
+  }
+  
+   
+  .text {
+    width: 50%;
+    animation: fadeIn 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .img1 {
+      display: none;
+    }
+    
+    .text {
+      width: 100%;
+    }
+  }
+  /* img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+  } */
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+
+  .page-wrapper {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    background-color: #F5F7FA;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    padding-left: calc(5% - 16px);
+    padding-right: calc(5% - 16px);
+    /* padding: 0 5%; */
+  }
+  
+  nav {
+    min-height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .profile-box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+    border-radius: 3px;
+    margin: 16px 16px;
+    padding: 16px 16px;
+    width: 200px;
+    text-align: center;
+    transition: 300ms;
+    flex-grow: 1;
+  }
+  
+  .profile-box:hover {
+    /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
+    box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+  }
+  
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+  }
+  
+  #logo {
+    width: 127px;
+    height: 100%;
+    border-radius: 0%;
+    background-color: white;
+    margin-right: 32px;
+    box-shadow: none;
+  }
+  
+  #searchField {
+    width: 100%;
+    background: rgba(245,247,250,0.20);
+    border: 1px solid #F5F7FA;
+    border-radius: 6px;
+    padding: 8px 16px;
+  }
+  
+  ::placeholder {
+    color: #98A0A6;
+    font-family: helvetica;
+    font-style: italic;
+    font-weight: 300;
+  }
+  
+  h3 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  h4 {
+    transition: 500ms;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #98A0A6;
+    cursor: pointer;
+  }
+  
+  h4:hover {
+    color: #507BFC;
+    text-decoration: underline;
+  }
+  
+  #assign,
+  #view {
+    width: 50%;
+    font-size: 14px;
+    color: #98A0A6;
+    font-weight: 300;
+    padding: 8px 0;
+    border-radius: 100px;
+    transition: 300ms;
+    cursor: pointer;
+  }
+  
+  #assign:hover,
+  #view:hover {
+    background-color: #507BFC;
+    color: white;
+    box-shadow: 0 10px 20px 0 rgba(80,123,252,0.50);
+  }
+  
+  #assign {
+    float: left;
+  }
+  
+  #view {
+    float: right;
+  }
+  
+  i {
+    margin-right: 8px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .team-section{
+    background: #f1f1f1;
+    text-align: center;
+  }
+  .inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    color: #121B46;
+    overflow: hidden;
+  }
+  .team-section h1{
+    font-size: 30px;
+    /* text-transform: uppercase;  */
+     display: inline-block;
+    border-bottom: 5px solid;
+    /* padding-bottom: 10px; */
+  }
+  .pe{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .pe:hover{
+    background: powderblue;
+  }
+  .pe img{
+    width: 120px;
+    height: 120px;
+    border: 5px solid #0047AB;
+  }
+  .p-name{
+    margin: 16px 0;
+    color: #1434A4;
+    font-weight: bold;
+     text-transform: uppercase;
+  } 
+  .p-des{
+    font-style: italic;
+    color: #3498db;
+  }
+  .p-sm{
+    margin-top: 12px;
+  }
+  .p-sm a{
+    margin: 0 4px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+  }
+  .p-sm a:hover{
+    transform: scale(1.3);
+  }
+  .p-sm a i{
+    color: blue;
+    line-height: 30px;
+  }
+
+ 
+ 
+  @media screen and (max-width:600px) {
+    .pe{
+      width: 100%;
+    }
+  }
+ 
+  .navbar-custom {
+    padding-top: 1rem; 
+    background: #121B46;
+    margin-bottom:50px;
+}
+.nav-item
+{
+    margin-left:10px;
+    padding: 10px;
+    margin-right: 150px;
+}
+
+.logo1{
+  width: 78px;
+height: 75px;
+}
+.pers{
+  border-radius: 50%;
+}
+
+

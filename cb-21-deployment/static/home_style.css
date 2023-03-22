@@ -1,0 +1,186 @@
+html, body { 
+    margin:0; 
+  } 
+.navbar-custom {
+    padding-top: 1rem; 
+    background: #121B46;
+    margin-bottom:50px;
+}
+.nav-item
+{
+    margin-left:10px;
+    padding: 10px;
+    margin-right: 70px;
+}
+  .content
+  {
+      max-width:80%;
+      margin:auto;
+      display:flex;
+      margin-top:10px;
+  }
+  
+  option:hover
+  {
+    background-color: #ececec;
+  }
+  
+  option
+  {
+      background-color: white;
+  }
+  
+  .image
+  {
+      object-fit: contain;
+      height:400px; 
+      margin-right:5%;
+  }
+  
+  .image_div
+  {
+      height:100%;
+      width:57%;
+      margin:auto;
+      margin-right:5%;   
+  }
+  
+  @media (max-width:745px)
+  {
+      .content .box1
+      {
+          padding:10px;
+          width:100%;
+      }
+  }
+  
+  @media (max-width:1206px){
+      .image_div
+      {
+            visibility: hidden;
+            margin:0%;
+            width:0px;
+            padding:0px;
+      }
+  
+      .image
+      {
+          height:0px;
+          width:0px;
+      }
+  }
+  
+  @media (max-width:1205px) and (min-width:746px)
+  {
+      .content .box1 
+      {
+          width: 70%;
+      }
+  }
+  
+  .box1
+  {
+      
+      height:fit-content;
+      width:900px;
+      margin:auto;
+      height:50%;
+      padding:20px;
+  }
+  
+  @media (min-width:1280px) 
+  {
+  .mb-3
+  {
+      width:80%;
+  }
+  }
+  
+  #button
+  {
+    background: #121B46;
+    border-radius: 8px;
+    color: white;
+    width:50%;
+
+  }
+  .text
+  {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #121B46;
+  }
+.text2
+{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #000000;
+}
+.text3
+{
+padding:10px;
+font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 50px;
+color: #0604A6;
+}
+.image_small
+{
+width: 243px;
+height: 65px;
+
+margin-top:3%;
+}
+.image_small1
+{
+width: 236px;
+height: 85px;
+left: 0px;
+top: 174px;
+margin:1%;
+}
+.arrow_img
+{
+    width: 35px;
+    height: 40px;
+    left: 334px;
+    margin-top:40%;
+    
+}
+
+footer
+{
+background: #121B46;
+}
+.small_text
+{
+    margin:2%;
+}
+.flex-container {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .wrap    { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }  
+  .flex-item {
+    display: flex;
+    margin: 10px;
+    line-height: 100px;
+    color: white;
+  }
+  .navbar-nav a:hover {
+    border-bottom: 4px solid white;
+    color:#121B46;
+    padding: 6px 0; 
+  }
